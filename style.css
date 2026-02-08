@@ -1,0 +1,89 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Body Styling */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.4s ease-in-out;
+  padding: 20px;
+}
+
+/* Heading */
+h1 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* Button Container */
+.button-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;  /* Makes it responsive */
+  justify-content: center;
+}
+
+/* Buttons */
+.button {
+  width: 120px;
+  height: 120px;
+  border-radius: 12px;
+  cursor: pointer;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Individual Colors */
+#grey {
+  background-color: grey;
+}
+
+#white {
+  background-color: white;
+  border: 1px solid #ccc;
+}
+
+#blue {
+  background-color: blue;
+  color: white;
+}
+
+#yellow {
+  background-color: yellow;
+}
+
+/* Hover Effect */
+.button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Click Effect */
+.button:active {
+  transform: scale(0.95);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .button {
+    width: 90px;
+    height: 90px;
+    font-size: 0.9rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+}
